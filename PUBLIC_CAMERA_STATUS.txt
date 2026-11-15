@@ -1,0 +1,10 @@
+PUBLIC INDIA ROAD CAMERA STATUS — 29 October 2026
+
+Public camera preview added to India Live Monitor:
+Guwahati, Assam — https://opencctv.org/cameras/india/assam/guwahati/guwahati-assam-306464
+
+This camera is a periodically updated IMAGE (about every 20 minutes), NOT a continuous video feed. Its public page currently displays a feed unavailable warning. The link is for external preview only and is not connected to YOLO.
+
+No working, reusable, operator-authorised Indian road video stream URL has been verified. For this reason cameras.json remains disabled and blank, and the application will correctly display Feed Unavailable instead of fake detections.
+
+To enable real remote YOLO: obtain a documented operator-authorised HTTP MJPEG / RTSP feed URL, add it to cameras.json and set enabled=true. Avoid putting credentials in files shared publicly. Existing dashboard, CSV, uploads, results and optional webcam have been preserved.

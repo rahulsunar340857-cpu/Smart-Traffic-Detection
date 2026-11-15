@@ -1,0 +1,26 @@
+[
+  {
+    "id": "delhi-road-1",
+    "name": "Delhi road camera (add authorised URL)",
+    "city": "New Delhi",
+    "state": "Delhi",
+    "enabled": false,
+    "url": ""
+  },
+  {
+    "id": "gurugram-road-1",
+    "name": "Gurugram road camera (add authorised URL)",
+    "city": "Gurugram",
+    "state": "Haryana",
+    "enabled": false,
+    "url": ""
+  },
+  {
+    "id": "faridabad-road-1",
+    "name": "Faridabad road camera (add authorised URL)",
+    "city": "Faridabad",
+    "state": "Haryana",
+    "enabled": false,
+    "url": ""
+  }
+]

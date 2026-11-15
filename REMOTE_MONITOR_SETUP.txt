@@ -1,0 +1,11 @@
+REMOTE TRAFFIC MONITOR SETUP
+
+1. Open cameras.json in Notepad. For a camera you are authorised to access, set enabled to true and url to its exact RTSP or HTTP(S) video-stream URL. Never put a camera URL in a public repository.
+2. Save cameras.json, then run: pip install -r requirements.txt and python app.py
+3. Open http://127.0.0.1:5000/india-monitor. Select a configured camera and click Start Remote Monitoring.
+4. The server opens the feed, processes one frame with YOLO and returns an annotated image plus counts. It repeats while the browser stays open. This is frame-by-frame monitoring, not continuous video playback.
+5. If no authorised feed is configured or accessible, the UI explicitly shows Feed Unavailable. No public CCTV URLs are supplied or guessed.
+6. The webcam panel remains available as an optional test mode. Existing CSV, uploads, results and history are preserved.
+7. The original Windows venv folder was intentionally excluded from this ZIP; create a fresh one with python -m venv venv then venv\Scripts\activate.
+
+SECURITY: Use only streams you own or have permission to access. The local Flask development server is not intended for public internet exposure.

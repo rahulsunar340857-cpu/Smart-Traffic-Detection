@@ -1,0 +1,541 @@
+Record_ID,Timestamp,Location,Zone,Total_Vehicles,Cars,Buses,Trucks,Motorcycles,Pedestrians,Traffic_Light,Estimated_Delay_Seconds,Traffic_Level
+TR0001,2026-10-12 07:00:00,Market Square,South,17,9,0,6,2,23,Red,51,Moderate
+TR0002,2026-10-12 07:14:00,City Center Crossing,Central,28,17,2,4,5,4,Red,69,Heavy
+TR0003,2026-10-12 07:22:00,Highway Entry Ramp,North,25,14,2,4,5,36,Red,78,Moderate
+TR0004,2026-10-12 07:35:00,Riverside Bridge,South,14,8,0,4,2,6,Red,42,Moderate
+TR0005,2026-10-12 07:38:00,Main Street Junction,Central,30,15,2,9,4,36,Yellow,62,Heavy
+TR0006,2026-10-12 08:09:00,Railway Station Road,East,35,18,2,10,5,18,Green,75,Heavy
+TR0007,2026-10-12 08:14:00,Riverside Bridge,South,33,19,2,5,7,16,Green,84,Heavy
+TR0008,2026-10-12 08:17:00,City Center Crossing,Central,53,30,2,9,12,24,Red,116,Critical
+TR0009,2026-10-12 08:17:00,Main Street Junction,Central,61,35,3,10,13,33,Red,174,Critical
+TR0010,2026-10-12 08:41:00,Airport Link Road,North,42,24,2,10,6,19,Green,99,Critical
+TR0011,2026-10-12 09:05:00,Airport Link Road,North,34,17,2,11,4,40,Red,85,Heavy
+TR0012,2026-10-12 09:06:00,Market Square,South,38,23,2,7,6,40,Red,87,Heavy
+TR0013,2026-10-12 09:33:00,Highway Entry Ramp,North,37,19,3,8,7,45,Green,90,Heavy
+TR0014,2026-10-12 09:34:00,Railway Station Road,East,44,28,3,5,8,9,Green,119,Critical
+TR0015,2026-10-12 09:48:00,City Center Crossing,Central,43,22,2,12,7,18,Green,107,Critical
+TR0016,2026-10-12 12:05:00,University Gate,West,12,7,1,2,2,36,Green,25,Moderate
+TR0017,2026-10-12 12:17:00,Market Square,South,21,12,1,5,3,38,Green,42,Moderate
+TR0018,2026-10-12 12:35:00,City Center Crossing,Central,30,17,2,4,7,14,Green,66,Heavy
+TR0019,2026-10-12 12:35:00,Airport Link Road,North,20,10,1,5,4,4,Green,32,Moderate
+TR0020,2026-10-12 12:41:00,Main Street Junction,Central,35,19,2,6,8,17,Red,87,Heavy
+TR0021,2026-10-12 13:06:00,City Center Crossing,Central,29,15,1,9,4,29,Red,72,Heavy
+TR0022,2026-10-12 13:10:00,Market Square,South,4,2,0,2,0,5,Red,26,Normal
+TR0023,2026-10-12 13:16:00,Railway Station Road,East,27,14,2,6,5,37,Green,56,Heavy
+TR0024,2026-10-12 13:22:00,Airport Link Road,North,13,7,1,3,2,8,Red,56,Moderate
+TR0025,2026-10-12 13:28:00,Main Street Junction,Central,32,16,2,8,6,2,Green,83,Heavy
+TR0026,2026-10-12 17:05:00,Main Street Junction,Central,48,27,3,9,9,18,Red,126,Critical
+TR0027,2026-10-12 17:06:00,Market Square,South,35,17,1,12,5,24,Green,90,Heavy
+TR0028,2026-10-12 17:11:00,City Center Crossing,Central,46,28,4,7,7,38,Red,121,Critical
+TR0029,2026-10-12 17:16:00,Riverside Bridge,South,20,10,1,6,3,6,Red,66,Moderate
+TR0030,2026-10-12 17:47:00,University Gate,West,23,12,1,8,2,35,Red,74,Moderate
+TR0031,2026-10-12 18:00:00,Riverside Bridge,South,24,13,2,6,3,12,Green,55,Moderate
+TR0032,2026-10-12 18:07:00,City Center Crossing,Central,42,26,2,5,9,20,Green,97,Critical
+TR0033,2026-10-12 18:35:00,Highway Entry Ramp,North,53,33,3,5,12,25,Green,85,Critical
+TR0034,2026-10-12 18:39:00,University Gate,West,41,23,3,7,8,44,Red,119,Critical
+TR0035,2026-10-12 18:43:00,Railway Station Road,East,25,14,2,4,5,7,Green,59,Moderate
+TR0036,2026-10-12 19:01:00,Market Square,South,18,10,1,4,3,6,Green,41,Moderate
+TR0037,2026-10-12 19:13:00,Main Street Junction,Central,47,28,2,8,9,37,Green,97,Critical
+TR0038,2026-10-12 19:24:00,Riverside Bridge,South,38,20,2,8,8,21,Green,95,Heavy
+TR0039,2026-10-12 19:47:00,Highway Entry Ramp,North,60,37,5,4,14,28,Red,157,Critical
+TR0040,2026-10-12 19:50:00,Airport Link Road,North,47,30,4,3,10,17,Red,126,Critical
+TR0041,2026-10-12 21:00:00,University Gate,West,4,2,0,2,0,14,Red,30,Normal
+TR0042,2026-10-12 21:07:00,Airport Link Road,North,23,13,0,5,5,40,Yellow,57,Moderate
+TR0043,2026-10-12 21:21:00,Highway Entry Ramp,North,28,16,1,6,5,21,Green,66,Heavy
+TR0044,2026-10-12 21:25:00,Main Street Junction,Central,25,13,1,6,5,13,Green,52,Moderate
+TR0045,2026-10-12 21:27:00,Market Square,South,13,7,0,4,2,38,Red,39,Moderate
+TR0046,2026-10-13 07:04:00,City Center Crossing,Central,11,6,0,3,2,27,Red,39,Moderate
+TR0047,2026-10-13 07:19:00,Airport Link Road,North,9,4,0,4,1,17,Green,31,Normal
+TR0048,2026-10-13 07:48:00,Railway Station Road,East,21,13,1,3,4,16,Red,76,Moderate
+TR0049,2026-10-13 07:50:00,Main Street Junction,Central,19,11,1,4,3,30,Green,50,Moderate
+TR0050,2026-10-13 07:50:00,Highway Entry Ramp,North,29,15,2,7,5,7,Green,76,Heavy
+TR0051,2026-10-13 08:05:00,City Center Crossing,Central,35,18,2,10,5,15,Red,89,Heavy
+TR0052,2026-10-13 08:17:00,University Gate,West,29,17,1,7,4,20,Red,75,Heavy
+TR0053,2026-10-13 08:27:00,Main Street Junction,Central,53,33,4,6,10,32,Yellow,132,Critical
+TR0054,2026-10-13 08:29:00,Riverside Bridge,South,34,19,2,7,6,30,Green,84,Heavy
+TR0055,2026-10-13 08:29:00,Airport Link Road,North,29,16,2,5,6,3,Green,73,Heavy
+TR0056,2026-10-13 09:01:00,Main Street Junction,Central,39,24,3,4,8,10,Green,85,Heavy
+TR0057,2026-10-13 09:24:00,Market Square,South,25,13,1,6,5,28,Red,52,Moderate
+TR0058,2026-10-13 09:26:00,Riverside Bridge,South,31,18,2,5,6,16,Yellow,60,Heavy
+TR0059,2026-10-13 09:37:00,Highway Entry Ramp,North,57,33,4,13,7,10,Green,96,Critical
+TR0060,2026-10-13 09:47:00,Railway Station Road,East,35,20,2,5,8,43,Red,104,Heavy
+TR0061,2026-10-13 12:04:00,Market Square,South,10,6,0,2,2,25,Green,34,Normal
+TR0062,2026-10-13 12:15:00,Main Street Junction,Central,35,20,2,8,5,25,Red,100,Heavy
+TR0063,2026-10-13 12:43:00,Airport Link Road,North,25,16,1,5,3,42,Red,74,Moderate
+TR0064,2026-10-13 12:43:00,Riverside Bridge,South,13,7,1,4,1,4,Red,44,Moderate
+TR0065,2026-10-13 12:45:00,City Center Crossing,Central,33,17,3,6,7,8,Green,91,Heavy
+TR0066,2026-10-13 13:15:00,Railway Station Road,East,18,11,1,4,2,41,Green,39,Moderate
+TR0067,2026-10-13 13:20:00,City Center Crossing,Central,23,12,2,6,3,23,Red,67,Moderate
+TR0068,2026-10-13 13:28:00,Riverside Bridge,South,18,11,0,5,2,17,Red,59,Moderate
+TR0069,2026-10-13 13:35:00,University Gate,West,33,16,2,8,7,17,Green,78,Heavy
+TR0070,2026-10-13 13:39:00,Highway Entry Ramp,North,29,18,2,4,5,29,Green,66,Heavy
+TR0071,2026-10-13 17:06:00,Riverside Bridge,South,31,17,2,8,4,10,Red,102,Heavy
+TR0072,2026-10-13 17:11:00,Railway Station Road,East,23,12,1,6,4,39,Green,50,Moderate
+TR0073,2026-10-13 17:18:00,University Gate,West,23,13,2,5,3,33,Red,51,Moderate
+TR0074,2026-10-13 17:22:00,Market Square,South,27,14,1,9,3,9,Green,79,Heavy
+TR0075,2026-10-13 17:30:00,Highway Entry Ramp,North,44,28,4,6,6,9,Green,83,Critical
+TR0076,2026-10-13 18:04:00,University Gate,West,32,19,1,7,5,20,Green,78,Heavy
+TR0077,2026-10-13 18:04:00,Highway Entry Ramp,North,56,33,4,6,13,42,Green,135,Critical
+TR0078,2026-10-13 18:05:00,Main Street Junction,Central,48,31,4,7,6,40,Green,114,Critical
+TR0079,2026-10-13 18:06:00,Airport Link Road,North,44,28,2,8,6,44,Red,97,Critical
+TR0080,2026-10-13 18:33:00,City Center Crossing,Central,33,17,2,8,6,38,Green,81,Heavy
+TR0081,2026-10-13 19:11:00,Market Square,South,36,22,2,4,8,28,Red,96,Heavy
+TR0082,2026-10-13 19:17:00,Airport Link Road,North,35,18,2,10,5,38,Green,74,Heavy
+TR0083,2026-10-13 19:27:00,University Gate,West,27,13,2,8,4,38,Green,50,Heavy
+TR0084,2026-10-13 19:43:00,City Center Crossing,Central,34,21,2,5,6,13,Yellow,78,Heavy
+TR0085,2026-10-13 19:44:00,Main Street Junction,Central,45,24,2,12,7,36,Yellow,67,Critical
+TR0086,2026-10-13 21:14:00,Highway Entry Ramp,North,30,19,2,2,7,9,Green,58,Heavy
+TR0087,2026-10-13 21:42:00,Market Square,South,16,10,1,2,3,31,Red,43,Moderate
+TR0088,2026-10-13 21:44:00,Airport Link Road,North,18,10,1,3,4,21,Green,38,Moderate
+TR0089,2026-10-13 21:48:00,Riverside Bridge,South,21,12,0,6,3,19,Green,59,Moderate
+TR0090,2026-10-13 21:49:00,Railway Station Road,East,10,6,0,2,2,28,Red,44,Normal
+TR0091,2026-10-14 07:17:00,Riverside Bridge,South,16,9,0,4,3,34,Red,48,Moderate
+TR0092,2026-10-14 07:19:00,Market Square,South,21,12,1,4,4,32,Red,66,Moderate
+TR0093,2026-10-14 07:24:00,Highway Entry Ramp,North,22,12,1,6,3,17,Green,48,Moderate
+TR0094,2026-10-14 07:26:00,Railway Station Road,East,28,16,1,5,6,44,Green,63,Heavy
+TR0095,2026-10-14 07:30:00,University Gate,West,22,12,2,5,3,34,Green,35,Moderate
+TR0096,2026-10-14 08:06:00,Riverside Bridge,South,32,20,2,5,5,31,Red,75,Heavy
+TR0097,2026-10-14 08:09:00,Main Street Junction,Central,58,31,3,13,11,7,Green,148,Critical
+TR0098,2026-10-14 08:15:00,University Gate,West,18,11,1,3,3,8,Green,41,Moderate
+TR0099,2026-10-14 08:24:00,City Center Crossing,Central,49,31,4,5,9,33,Green,71,Critical
+TR0100,2026-10-14 08:28:00,Highway Entry Ramp,North,39,20,1,12,6,22,Green,73,Heavy
+TR0101,2026-10-14 09:12:00,University Gate,West,28,18,1,3,6,26,Green,69,Heavy
+TR0102,2026-10-14 09:14:00,City Center Crossing,Central,40,22,2,10,6,2,Green,82,Heavy
+TR0103,2026-10-14 09:18:00,Railway Station Road,East,41,22,3,12,4,5,Green,98,Critical
+TR0104,2026-10-14 09:36:00,Airport Link Road,North,32,16,2,8,6,45,Red,96,Heavy
+TR0105,2026-10-14 09:43:00,Riverside Bridge,South,26,16,1,3,6,29,Green,54,Heavy
+TR0106,2026-10-14 12:08:00,Highway Entry Ramp,North,33,20,2,4,7,34,Green,83,Heavy
+TR0107,2026-10-14 12:30:00,City Center Crossing,Central,31,19,2,4,6,6,Red,104,Heavy
+TR0108,2026-10-14 12:39:00,Railway Station Road,East,18,9,1,5,3,45,Green,48,Moderate
+TR0109,2026-10-14 12:41:00,University Gate,West,28,14,1,9,4,20,Red,71,Heavy
+TR0110,2026-10-14 12:46:00,Airport Link Road,North,18,10,1,4,3,37,Red,57,Moderate
+TR0111,2026-10-14 13:07:00,Main Street Junction,Central,38,20,1,11,6,36,Red,98,Heavy
+TR0112,2026-10-14 13:20:00,Riverside Bridge,South,11,7,0,3,1,31,Green,25,Moderate
+TR0113,2026-10-14 13:39:00,Highway Entry Ramp,North,15,7,0,6,2,17,Green,32,Moderate
+TR0114,2026-10-14 13:43:00,University Gate,West,16,8,0,5,3,45,Red,45,Moderate
+TR0115,2026-10-14 13:47:00,Railway Station Road,East,30,18,2,5,5,11,Green,72,Heavy
+TR0116,2026-10-14 17:09:00,Highway Entry Ramp,North,59,36,5,11,7,10,Red,156,Critical
+TR0117,2026-10-14 17:25:00,Market Square,South,38,20,3,6,9,31,Red,87,Heavy
+TR0118,2026-10-14 17:37:00,Riverside Bridge,South,28,14,1,7,6,11,Green,63,Heavy
+TR0119,2026-10-14 17:37:00,Main Street Junction,Central,46,25,1,14,6,28,Green,112,Critical
+TR0120,2026-10-14 17:38:00,University Gate,West,31,17,2,5,7,15,Red,89,Heavy
+TR0121,2026-10-14 18:03:00,Airport Link Road,North,33,21,2,3,7,8,Yellow,83,Heavy
+TR0122,2026-10-14 18:05:00,Highway Entry Ramp,North,49,25,3,12,9,22,Red,122,Critical
+TR0123,2026-10-14 18:28:00,Riverside Bridge,South,12,6,1,3,2,35,Red,41,Moderate
+TR0124,2026-10-14 18:29:00,University Gate,West,32,18,2,7,5,9,Green,81,Heavy
+TR0125,2026-10-14 18:35:00,Main Street Junction,Central,46,26,2,12,6,31,Red,124,Critical
+TR0126,2026-10-14 19:09:00,Airport Link Road,North,29,17,1,6,5,7,Red,69,Heavy
+TR0127,2026-10-14 19:13:00,Riverside Bridge,South,33,20,2,6,5,9,Green,80,Heavy
+TR0128,2026-10-14 19:23:00,Highway Entry Ramp,North,54,31,3,10,10,9,Yellow,144,Critical
+TR0129,2026-10-14 19:27:00,Market Square,South,20,12,1,3,4,40,Red,53,Moderate
+TR0130,2026-10-14 19:27:00,University Gate,West,35,21,3,3,8,41,Green,81,Heavy
+TR0131,2026-10-14 21:13:00,Main Street Junction,Central,31,17,1,8,5,21,Green,81,Heavy
+TR0132,2026-10-14 21:21:00,University Gate,West,14,7,0,5,2,42,Green,29,Moderate
+TR0133,2026-10-14 21:28:00,Highway Entry Ramp,North,31,17,2,8,4,24,Yellow,63,Heavy
+TR0134,2026-10-14 21:37:00,Riverside Bridge,South,6,3,0,2,1,2,Red,42,Normal
+TR0135,2026-10-14 21:38:00,City Center Crossing,Central,27,14,2,6,5,19,Yellow,60,Heavy
+TR0136,2026-10-15 07:07:00,Highway Entry Ramp,North,30,15,1,8,6,26,Green,58,Heavy
+TR0137,2026-10-15 07:25:00,Riverside Bridge,South,14,8,0,4,2,3,Green,31,Moderate
+TR0138,2026-10-15 07:29:00,Market Square,South,24,12,1,6,5,39,Yellow,39,Moderate
+TR0139,2026-10-15 07:42:00,Airport Link Road,North,20,12,0,6,2,6,Green,50,Moderate
+TR0140,2026-10-15 07:47:00,University Gate,West,3,1,0,2,0,34,Green,9,Normal
+TR0141,2026-10-15 08:06:00,Market Square,South,31,18,2,5,6,13,Green,73,Heavy
+TR0142,2026-10-15 08:29:00,City Center Crossing,Central,51,28,4,13,6,6,Green,132,Critical
+TR0143,2026-10-15 08:39:00,University Gate,West,23,13,1,4,5,4,Yellow,64,Moderate
+TR0144,2026-10-15 08:40:00,Riverside Bridge,South,25,14,2,4,5,39,Red,69,Moderate
+TR0145,2026-10-15 08:48:00,Highway Entry Ramp,North,54,31,4,9,10,38,Green,144,Critical
+TR0146,2026-10-15 09:03:00,Railway Station Road,East,25,14,2,4,5,7,Green,43,Moderate
+TR0147,2026-10-15 09:16:00,Riverside Bridge,South,27,17,1,3,6,39,Green,71,Heavy
+TR0148,2026-10-15 09:38:00,University Gate,West,31,15,1,9,6,23,Red,87,Heavy
+TR0149,2026-10-15 09:41:00,City Center Crossing,Central,34,20,2,7,5,7,Red,89,Heavy
+TR0150,2026-10-15 09:45:00,Highway Entry Ramp,North,44,25,2,11,6,20,Red,127,Critical
+TR0151,2026-10-15 12:02:00,City Center Crossing,Central,18,10,0,5,3,13,Green,53,Moderate
+TR0152,2026-10-15 12:08:00,Airport Link Road,North,12,6,1,4,1,34,Green,36,Moderate
+TR0153,2026-10-15 12:10:00,University Gate,West,4,2,0,2,0,17,Green,20,Normal
+TR0154,2026-10-15 12:41:00,Market Square,South,13,6,1,4,2,23,Green,28,Moderate
+TR0155,2026-10-15 12:47:00,Main Street Junction,Central,29,15,2,5,7,14,Red,95,Heavy
+TR0156,2026-10-15 13:09:00,University Gate,West,21,10,1,7,3,10,Green,50,Moderate
+TR0157,2026-10-15 13:10:00,Riverside Bridge,South,12,7,0,3,2,18,Red,43,Moderate
+TR0158,2026-10-15 13:27:00,Highway Entry Ramp,North,25,12,2,6,5,24,Green,53,Moderate
+TR0159,2026-10-15 13:32:00,Railway Station Road,East,12,6,0,5,1,8,Green,38,Moderate
+TR0160,2026-10-15 13:35:00,Airport Link Road,North,30,17,1,8,4,12,Red,91,Heavy
+TR0161,2026-10-15 17:02:00,City Center Crossing,Central,31,16,2,10,3,24,Red,83,Heavy
+TR0162,2026-10-15 17:09:00,Main Street Junction,Central,36,20,2,10,4,21,Red,85,Heavy
+TR0163,2026-10-15 17:23:00,Highway Entry Ramp,North,54,27,3,14,10,34,Green,107,Critical
+TR0164,2026-10-15 17:36:00,Airport Link Road,North,34,19,1,8,6,28,Red,97,Heavy
+TR0165,2026-10-15 17:50:00,Riverside Bridge,South,25,14,2,6,3,33,Green,43,Moderate
+TR0166,2026-10-15 18:21:00,Highway Entry Ramp,North,49,27,3,11,8,26,Red,105,Critical
+TR0167,2026-10-15 18:31:00,University Gate,West,41,22,2,8,9,7,Green,70,Critical
+TR0168,2026-10-15 18:34:00,Main Street Junction,Central,39,22,3,10,4,20,Red,116,Heavy
+TR0169,2026-10-15 18:41:00,Market Square,South,14,7,0,4,3,32,Green,34,Moderate
+TR0170,2026-10-15 18:45:00,City Center Crossing,Central,45,24,2,14,5,4,Red,100,Critical
+TR0171,2026-10-15 19:05:00,Highway Entry Ramp,North,48,27,2,9,10,30,Red,89,Critical
+TR0172,2026-10-15 19:23:00,Main Street Junction,Central,44,22,2,13,7,19,Red,93,Critical
+TR0173,2026-10-15 19:32:00,Riverside Bridge,South,32,20,2,6,4,30,Red,74,Heavy
+TR0174,2026-10-15 19:39:00,University Gate,West,34,22,3,4,5,5,Red,93,Heavy
+TR0175,2026-10-15 19:41:00,Market Square,South,18,9,1,5,3,40,Red,54,Moderate
+TR0176,2026-10-15 21:12:00,Railway Station Road,East,26,14,1,5,6,7,Green,71,Heavy
+TR0177,2026-10-15 21:16:00,Highway Entry Ramp,North,30,18,1,5,6,41,Red,96,Heavy
+TR0178,2026-10-15 21:36:00,Main Street Junction,Central,33,18,2,6,7,41,Green,54,Heavy
+TR0179,2026-10-15 21:40:00,Airport Link Road,North,23,12,2,4,5,17,Green,40,Moderate
+TR0180,2026-10-15 21:42:00,University Gate,West,26,14,1,8,3,21,Green,69,Heavy
+TR0181,2026-10-16 07:08:00,Riverside Bridge,South,26,14,1,6,5,37,Green,44,Heavy
+TR0182,2026-10-16 07:27:00,University Gate,West,15,8,1,3,3,35,Red,43,Moderate
+TR0183,2026-10-16 07:40:00,Market Square,South,33,17,2,8,6,12,Green,71,Heavy
+TR0184,2026-10-16 07:42:00,Main Street Junction,Central,17,9,0,4,4,3,Red,70,Moderate
+TR0185,2026-10-16 07:45:00,Railway Station Road,East,19,10,0,7,2,14,Green,41,Moderate
+TR0186,2026-10-16 08:06:00,Riverside Bridge,South,25,13,1,8,3,20,Green,66,Moderate
+TR0187,2026-10-16 08:15:00,Railway Station Road,East,36,23,3,2,8,38,Green,60,Heavy
+TR0188,2026-10-16 08:39:00,University Gate,West,18,10,1,4,3,20,Green,34,Moderate
+TR0189,2026-10-16 08:43:00,Market Square,South,22,13,1,5,3,31,Red,66,Moderate
+TR0190,2026-10-16 08:45:00,City Center Crossing,Central,48,26,2,9,11,27,Red,111,Critical
+TR0191,2026-10-16 09:23:00,Railway Station Road,East,29,16,1,7,5,37,Red,76,Heavy
+TR0192,2026-10-16 09:23:00,Highway Entry Ramp,North,52,33,2,6,11,34,Yellow,75,Critical
+TR0193,2026-10-16 09:31:00,Riverside Bridge,South,45,25,2,7,11,24,Red,102,Critical
+TR0194,2026-10-16 09:41:00,University Gate,West,31,18,1,8,4,8,Yellow,87,Heavy
+TR0195,2026-10-16 09:48:00,Market Square,South,22,12,1,4,5,41,Red,77,Moderate
+TR0196,2026-10-16 12:09:00,Highway Entry Ramp,North,23,13,1,5,4,41,Red,67,Moderate
+TR0197,2026-10-16 12:09:00,University Gate,West,15,9,1,3,2,9,Red,49,Moderate
+TR0198,2026-10-16 12:21:00,Riverside Bridge,South,9,5,0,2,2,42,Red,42,Normal
+TR0199,2026-10-16 12:47:00,Market Square,South,22,12,1,5,4,38,Red,72,Moderate
+TR0200,2026-10-16 12:50:00,Railway Station Road,East,26,13,1,9,3,35,Green,61,Heavy
+TR0201,2026-10-16 13:30:00,Railway Station Road,East,2,1,0,1,0,36,Red,30,Normal
+TR0202,2026-10-16 13:32:00,Highway Entry Ramp,North,32,20,1,5,6,10,Green,76,Heavy
+TR0203,2026-10-16 13:46:00,Market Square,South,11,5,1,3,2,19,Green,22,Moderate
+TR0204,2026-10-16 13:46:00,Airport Link Road,North,19,11,1,4,3,24,Green,48,Moderate
+TR0205,2026-10-16 13:49:00,City Center Crossing,Central,14,7,1,4,2,22,Yellow,41,Moderate
+TR0206,2026-10-16 17:05:00,Airport Link Road,North,22,13,1,5,3,4,Green,37,Moderate
+TR0207,2026-10-16 17:08:00,Highway Entry Ramp,North,59,31,5,16,7,16,Green,92,Critical
+TR0208,2026-10-16 17:21:00,Market Square,South,36,21,3,8,4,2,Green,94,Heavy
+TR0209,2026-10-16 17:26:00,Riverside Bridge,South,20,11,1,4,4,20,Red,70,Moderate
+TR0210,2026-10-16 17:28:00,Main Street Junction,Central,51,30,2,8,11,36,Red,124,Critical
+TR0211,2026-10-16 18:11:00,City Center Crossing,Central,52,33,3,10,6,30,Green,136,Critical
+TR0212,2026-10-16 18:21:00,Railway Station Road,East,32,17,2,9,4,20,Green,75,Heavy
+TR0213,2026-10-16 18:39:00,Market Square,South,35,21,3,3,8,34,Red,81,Heavy
+TR0214,2026-10-16 18:41:00,Airport Link Road,North,30,17,2,6,5,34,Yellow,49,Heavy
+TR0215,2026-10-16 18:47:00,Main Street Junction,Central,63,39,4,13,7,8,Green,120,Critical
+TR0216,2026-10-16 19:03:00,Main Street Junction,Central,46,27,2,9,8,45,Green,124,Critical
+TR0217,2026-10-16 19:35:00,City Center Crossing,Central,55,34,3,10,8,12,Red,127,Critical
+TR0218,2026-10-16 19:47:00,Market Square,South,32,20,2,5,5,32,Green,78,Heavy
+TR0219,2026-10-16 19:48:00,Airport Link Road,North,34,21,2,7,4,25,Red,85,Heavy
+TR0220,2026-10-16 19:49:00,Highway Entry Ramp,North,49,31,3,8,7,16,Green,103,Critical
+TR0221,2026-10-16 21:01:00,Market Square,South,17,9,1,4,3,39,Red,58,Moderate
+TR0222,2026-10-16 21:04:00,University Gate,West,14,8,0,3,3,20,Yellow,44,Moderate
+TR0223,2026-10-16 21:24:00,Main Street Junction,Central,43,27,3,8,5,9,Red,110,Critical
+TR0224,2026-10-16 21:32:00,Railway Station Road,East,14,7,1,4,2,37,Yellow,44,Moderate
+TR0225,2026-10-16 21:41:00,Riverside Bridge,South,16,10,1,2,3,26,Yellow,46,Moderate
+TR0226,2026-10-17 07:09:00,Market Square,South,14,8,1,4,1,28,Green,35,Moderate
+TR0227,2026-10-17 07:15:00,City Center Crossing,Central,42,22,1,14,5,40,Green,105,Critical
+TR0228,2026-10-17 07:19:00,Highway Entry Ramp,North,38,21,2,7,8,26,Green,69,Heavy
+TR0229,2026-10-17 07:36:00,University Gate,West,19,10,1,5,3,22,Red,71,Moderate
+TR0230,2026-10-17 07:47:00,Main Street Junction,Central,35,20,3,5,7,10,Green,72,Heavy
+TR0231,2026-10-17 08:05:00,Main Street Junction,Central,34,17,2,10,5,4,Green,67,Heavy
+TR0232,2026-10-17 08:33:00,Market Square,South,31,16,1,10,4,43,Red,80,Heavy
+TR0233,2026-10-17 08:34:00,Highway Entry Ramp,North,37,20,3,7,7,5,Green,102,Heavy
+TR0234,2026-10-17 08:35:00,Railway Station Road,East,42,26,2,6,8,33,Red,101,Critical
+TR0235,2026-10-17 08:42:00,Riverside Bridge,South,24,13,1,6,4,28,Red,71,Moderate
+TR0236,2026-10-17 09:00:00,Railway Station Road,East,25,13,2,7,3,32,Green,66,Moderate
+TR0237,2026-10-17 09:02:00,Highway Entry Ramp,North,46,24,4,11,7,39,Green,83,Critical
+TR0238,2026-10-17 09:13:00,Riverside Bridge,South,24,13,1,7,3,43,Red,64,Moderate
+TR0239,2026-10-17 09:21:00,University Gate,West,27,14,1,7,5,37,Green,63,Heavy
+TR0240,2026-10-17 09:31:00,City Center Crossing,Central,47,26,3,8,10,22,Green,92,Critical
+TR0241,2026-10-17 12:02:00,Market Square,South,10,6,0,3,1,5,Green,28,Normal
+TR0242,2026-10-17 12:10:00,Riverside Bridge,South,16,8,0,5,3,36,Green,48,Moderate
+TR0243,2026-10-17 12:14:00,Airport Link Road,North,23,12,1,6,4,42,Green,56,Moderate
+TR0244,2026-10-17 12:18:00,University Gate,West,29,17,2,4,6,8,Green,61,Heavy
+TR0245,2026-10-17 12:42:00,Railway Station Road,East,18,10,1,5,2,2,Red,63,Moderate
+TR0246,2026-10-17 13:03:00,Airport Link Road,North,7,4,0,2,1,29,Green,13,Normal
+TR0247,2026-10-17 13:17:00,Railway Station Road,East,18,11,1,4,2,31,Green,49,Moderate
+TR0248,2026-10-17 13:19:00,University Gate,West,11,6,0,3,2,7,Yellow,27,Moderate
+TR0249,2026-10-17 13:33:00,Highway Entry Ramp,North,34,21,2,4,7,19,Red,69,Heavy
+TR0250,2026-10-17 13:34:00,Market Square,South,14,8,1,4,1,22,Red,40,Moderate
+TR0251,2026-10-17 17:05:00,University Gate,West,28,17,1,7,3,25,Red,58,Heavy
+TR0252,2026-10-17 17:27:00,City Center Crossing,Central,42,22,2,10,8,41,Red,87,Critical
+TR0253,2026-10-17 17:32:00,Main Street Junction,Central,41,25,1,9,6,16,Green,86,Critical
+TR0254,2026-10-17 17:36:00,Airport Link Road,North,37,23,3,5,6,10,Green,83,Heavy
+TR0255,2026-10-17 17:39:00,Highway Entry Ramp,North,57,35,3,12,7,30,Yellow,110,Critical
+TR0256,2026-10-17 18:05:00,Riverside Bridge,South,35,18,2,9,6,28,Red,75,Heavy
+TR0257,2026-10-17 18:05:00,Highway Entry Ramp,North,40,25,2,9,4,7,Green,85,Heavy
+TR0258,2026-10-17 18:10:00,Main Street Junction,Central,40,22,2,11,5,17,Green,88,Heavy
+TR0259,2026-10-17 18:12:00,City Center Crossing,Central,47,26,1,14,6,27,Red,127,Critical
+TR0260,2026-10-17 18:36:00,Airport Link Road,North,26,15,1,5,5,19,Red,67,Heavy
+TR0261,2026-10-17 19:04:00,Airport Link Road,North,33,20,2,4,7,33,Red,77,Heavy
+TR0262,2026-10-17 19:19:00,Market Square,South,21,11,2,5,3,22,Red,68,Moderate
+TR0263,2026-10-17 19:36:00,Railway Station Road,East,44,27,2,8,7,27,Red,128,Critical
+TR0264,2026-10-17 19:37:00,Highway Entry Ramp,North,55,33,4,12,6,15,Yellow,107,Critical
+TR0265,2026-10-17 19:42:00,City Center Crossing,Central,48,26,3,11,8,39,Yellow,107,Critical
+TR0266,2026-10-17 21:06:00,Airport Link Road,North,26,15,1,5,5,43,Green,63,Heavy
+TR0267,2026-10-17 21:22:00,Market Square,South,36,19,1,10,6,32,Red,80,Heavy
+TR0268,2026-10-17 21:32:00,Highway Entry Ramp,North,44,25,4,9,6,7,Red,128,Critical
+TR0269,2026-10-17 21:35:00,Main Street Junction,Central,13,7,0,4,2,27,Yellow,39,Moderate
+TR0270,2026-10-17 21:43:00,University Gate,West,5,2,0,2,1,8,Red,33,Normal
+TR0271,2026-10-18 07:16:00,Market Square,South,13,8,0,3,2,27,Green,30,Moderate
+TR0272,2026-10-18 07:25:00,Main Street Junction,Central,37,19,2,9,7,15,Red,112,Heavy
+TR0273,2026-10-18 07:35:00,Highway Entry Ramp,North,39,21,3,8,7,42,Red,105,Heavy
+TR0274,2026-10-18 07:45:00,Riverside Bridge,South,27,16,1,5,5,17,Green,60,Heavy
+TR0275,2026-10-18 07:50:00,Airport Link Road,North,21,10,1,8,2,13,Red,50,Moderate
+TR0276,2026-10-18 08:26:00,Airport Link Road,North,26,14,1,7,4,43,Green,43,Heavy
+TR0277,2026-10-18 08:31:00,Market Square,South,23,12,2,6,3,41,Red,57,Moderate
+TR0278,2026-10-18 08:31:00,Riverside Bridge,South,37,23,2,6,6,45,Yellow,90,Heavy
+TR0279,2026-10-18 08:31:00,Main Street Junction,Central,57,29,5,12,11,16,Red,121,Critical
+TR0280,2026-10-18 08:43:00,Highway Entry Ramp,North,43,22,2,14,5,13,Red,88,Critical
+TR0281,2026-10-18 09:03:00,Market Square,South,21,12,2,5,2,20,Red,59,Moderate
+TR0282,2026-10-18 09:22:00,Riverside Bridge,South,42,26,2,6,8,41,Red,87,Critical
+TR0283,2026-10-18 09:28:00,City Center Crossing,Central,43,25,1,7,10,43,Green,75,Critical
+TR0284,2026-10-18 09:28:00,Railway Station Road,East,27,13,1,7,6,17,Red,87,Heavy
+TR0285,2026-10-18 09:35:00,University Gate,West,19,10,1,5,3,36,Green,38,Moderate
+TR0286,2026-10-18 12:13:00,Highway Entry Ramp,North,27,15,1,7,4,37,Green,63,Heavy
+TR0287,2026-10-18 12:25:00,Riverside Bridge,South,7,3,0,3,1,42,Green,22,Normal
+TR0288,2026-10-18 12:32:00,Railway Station Road,East,17,10,1,3,3,31,Green,30,Moderate
+TR0289,2026-10-18 12:41:00,City Center Crossing,Central,22,11,1,5,5,22,Green,60,Moderate
+TR0290,2026-10-18 12:49:00,Main Street Junction,Central,29,18,2,4,5,6,Green,60,Heavy
+TR0291,2026-10-18 13:00:00,Airport Link Road,North,11,5,0,5,1,35,Green,26,Moderate
+TR0292,2026-10-18 13:08:00,Riverside Bridge,South,9,5,0,3,1,19,Red,32,Normal
+TR0293,2026-10-18 13:21:00,University Gate,West,25,14,1,7,3,26,Red,75,Moderate
+TR0294,2026-10-18 13:23:00,Main Street Junction,Central,22,11,1,6,4,16,Yellow,34,Moderate
+TR0295,2026-10-18 13:40:00,Market Square,South,18,9,1,4,4,2,Green,45,Moderate
+TR0296,2026-10-18 17:05:00,Airport Link Road,North,27,17,1,6,3,26,Red,78,Heavy
+TR0297,2026-10-18 17:08:00,City Center Crossing,Central,44,23,3,10,8,20,Green,108,Critical
+TR0298,2026-10-18 17:19:00,Railway Station Road,East,38,20,1,10,7,27,Red,82,Heavy
+TR0299,2026-10-18 17:39:00,Highway Entry Ramp,North,46,27,2,8,9,28,Green,91,Critical
+TR0300,2026-10-18 17:49:00,Market Square,South,9,5,0,2,2,45,Red,33,Normal
+TR0301,2026-10-18 18:05:00,Main Street Junction,Central,48,28,2,9,9,7,Red,114,Critical
+TR0302,2026-10-18 18:09:00,City Center Crossing,Central,37,22,2,5,8,6,Red,89,Heavy
+TR0303,2026-10-18 18:13:00,Airport Link Road,North,36,22,2,6,6,34,Green,74,Heavy
+TR0304,2026-10-18 18:26:00,Riverside Bridge,South,26,14,2,5,5,6,Red,57,Heavy
+TR0305,2026-10-18 18:31:00,Railway Station Road,East,27,17,1,6,3,22,Red,89,Heavy
+TR0306,2026-10-18 19:08:00,City Center Crossing,Central,42,27,3,5,7,18,Red,92,Critical
+TR0307,2026-10-18 19:16:00,Railway Station Road,East,26,13,1,8,4,33,Green,43,Heavy
+TR0308,2026-10-18 19:16:00,Market Square,South,19,11,1,3,4,9,Red,53,Moderate
+TR0309,2026-10-18 19:17:00,Riverside Bridge,South,24,14,2,5,3,23,Green,42,Moderate
+TR0310,2026-10-18 19:29:00,Main Street Junction,Central,46,27,3,11,5,44,Green,81,Critical
+TR0311,2026-10-18 21:14:00,Riverside Bridge,South,23,14,1,6,2,20,Green,41,Moderate
+TR0312,2026-10-18 21:24:00,Main Street Junction,Central,31,19,2,7,3,43,Yellow,61,Heavy
+TR0313,2026-10-18 21:35:00,Railway Station Road,East,2,1,0,1,0,21,Green,8,Normal
+TR0314,2026-10-18 21:37:00,Highway Entry Ramp,North,54,33,3,7,11,17,Red,151,Critical
+TR0315,2026-10-18 21:46:00,City Center Crossing,Central,23,12,1,5,5,9,Green,59,Moderate
+TR0316,2026-10-19 07:00:00,Railway Station Road,East,12,7,1,2,2,21,Red,42,Moderate
+TR0317,2026-10-19 07:20:00,Market Square,South,13,7,0,4,2,14,Red,46,Moderate
+TR0318,2026-10-19 07:23:00,Highway Entry Ramp,North,30,17,2,5,6,34,Red,87,Heavy
+TR0319,2026-10-19 07:26:00,University Gate,West,14,9,0,3,2,16,Green,39,Moderate
+TR0320,2026-10-19 07:37:00,Main Street Junction,Central,21,13,1,4,3,22,Green,50,Moderate
+TR0321,2026-10-19 08:14:00,University Gate,West,37,20,2,8,7,39,Green,93,Heavy
+TR0322,2026-10-19 08:20:00,Highway Entry Ramp,North,43,27,2,8,6,18,Green,76,Critical
+TR0323,2026-10-19 08:35:00,Railway Station Road,East,35,21,2,7,5,10,Red,78,Heavy
+TR0324,2026-10-19 08:43:00,Main Street Junction,Central,52,28,3,10,11,15,Green,94,Critical
+TR0325,2026-10-19 08:45:00,City Center Crossing,Central,44,25,2,8,9,13,Red,104,Critical
+TR0326,2026-10-19 09:01:00,Market Square,South,32,20,1,4,7,36,Green,67,Heavy
+TR0327,2026-10-19 09:03:00,Railway Station Road,East,34,19,2,7,6,17,Green,92,Heavy
+TR0328,2026-10-19 09:05:00,Main Street Junction,Central,57,36,3,6,12,4,Green,92,Critical
+TR0329,2026-10-19 09:09:00,City Center Crossing,Central,37,18,2,10,7,20,Yellow,97,Heavy
+TR0330,2026-10-19 09:27:00,Riverside Bridge,South,31,15,1,9,6,15,Green,60,Heavy
+TR0331,2026-10-19 12:10:00,Railway Station Road,East,16,8,0,5,3,5,Green,49,Moderate
+TR0332,2026-10-19 12:20:00,Market Square,South,15,9,1,3,2,32,Green,37,Moderate
+TR0333,2026-10-19 12:22:00,City Center Crossing,Central,36,23,2,5,6,14,Green,92,Heavy
+TR0334,2026-10-19 12:24:00,Highway Entry Ramp,North,21,13,1,4,3,24,Green,41,Moderate
+TR0335,2026-10-19 12:34:00,Main Street Junction,Central,25,12,1,9,3,35,Yellow,53,Moderate
+TR0336,2026-10-19 13:04:00,Airport Link Road,North,8,4,0,3,1,10,Green,24,Normal
+TR0337,2026-10-19 13:20:00,Railway Station Road,East,24,12,1,8,3,11,Green,62,Moderate
+TR0338,2026-10-19 13:22:00,Highway Entry Ramp,North,31,16,2,9,4,10,Red,69,Heavy
+TR0339,2026-10-19 13:36:00,Market Square,South,26,14,2,4,6,4,Red,73,Heavy
+TR0340,2026-10-19 13:50:00,City Center Crossing,Central,37,22,2,7,6,37,Green,105,Heavy
+TR0341,2026-10-19 17:00:00,University Gate,West,36,20,2,9,5,26,Red,88,Heavy
+TR0342,2026-10-19 17:09:00,Railway Station Road,East,27,14,2,7,4,7,Green,70,Heavy
+TR0343,2026-10-19 17:18:00,Riverside Bridge,South,34,17,3,9,5,12,Green,70,Heavy
+TR0344,2026-10-19 17:21:00,Market Square,South,31,17,1,9,4,6,Red,98,Heavy
+TR0345,2026-10-19 17:50:00,Main Street Junction,Central,49,30,3,6,10,12,Yellow,115,Critical
+TR0346,2026-10-19 18:12:00,Railway Station Road,East,32,19,2,4,7,9,Red,82,Heavy
+TR0347,2026-10-19 18:26:00,University Gate,West,25,15,1,6,3,17,Red,69,Moderate
+TR0348,2026-10-19 18:27:00,Market Square,South,29,18,2,5,4,12,Red,70,Heavy
+TR0349,2026-10-19 18:31:00,Airport Link Road,North,23,12,1,7,3,20,Green,56,Moderate
+TR0350,2026-10-19 18:42:00,Main Street Junction,Central,50,26,3,11,10,25,Green,99,Critical
+TR0351,2026-10-19 19:12:00,Airport Link Road,North,39,25,3,5,6,42,Red,102,Heavy
+TR0352,2026-10-19 19:14:00,Main Street Junction,Central,52,27,2,13,10,44,Red,133,Critical
+TR0353,2026-10-19 19:36:00,Railway Station Road,East,34,17,2,7,8,34,Green,77,Heavy
+TR0354,2026-10-19 19:37:00,Highway Entry Ramp,North,43,22,2,14,5,35,Yellow,94,Critical
+TR0355,2026-10-19 19:43:00,Market Square,South,23,14,2,4,3,30,Red,77,Moderate
+TR0356,2026-10-19 21:35:00,City Center Crossing,Central,31,17,2,8,4,2,Green,74,Heavy
+TR0357,2026-10-19 21:38:00,University Gate,West,12,6,0,4,2,27,Red,49,Moderate
+TR0358,2026-10-19 21:44:00,Market Square,South,17,9,1,4,3,25,Red,59,Moderate
+TR0359,2026-10-19 21:50:00,Main Street Junction,Central,21,10,1,6,4,8,Green,44,Moderate
+TR0360,2026-10-19 21:50:00,Railway Station Road,East,20,10,1,6,3,28,Red,67,Moderate
+TR0361,2026-10-20 07:08:00,University Gate,West,13,8,1,2,2,40,Green,24,Moderate
+TR0362,2026-10-20 07:15:00,Main Street Junction,Central,27,13,1,10,3,14,Red,87,Heavy
+TR0363,2026-10-20 07:25:00,City Center Crossing,Central,23,11,1,8,3,13,Green,53,Moderate
+TR0364,2026-10-20 07:26:00,Highway Entry Ramp,North,40,24,3,5,8,5,Green,67,Heavy
+TR0365,2026-10-20 07:45:00,Railway Station Road,East,13,8,0,2,3,14,Green,21,Moderate
+TR0366,2026-10-20 08:00:00,Main Street Junction,Central,39,22,3,6,8,25,Green,86,Heavy
+TR0367,2026-10-20 08:13:00,Highway Entry Ramp,North,50,25,4,10,11,2,Yellow,79,Critical
+TR0368,2026-10-20 08:18:00,Market Square,South,26,13,2,8,3,15,Green,66,Heavy
+TR0369,2026-10-20 08:27:00,Airport Link Road,North,44,25,2,11,6,35,Green,83,Critical
+TR0370,2026-10-20 08:38:00,City Center Crossing,Central,51,31,3,10,7,21,Green,118,Critical
+TR0371,2026-10-20 09:15:00,Market Square,South,28,17,2,3,6,40,Yellow,51,Heavy
+TR0372,2026-10-20 09:19:00,Airport Link Road,North,41,25,1,10,5,10,Green,101,Critical
+TR0373,2026-10-20 09:21:00,University Gate,West,38,23,3,7,5,43,Red,87,Heavy
+TR0374,2026-10-20 09:21:00,Railway Station Road,East,30,18,2,6,4,32,Green,74,Heavy
+TR0375,2026-10-20 09:46:00,Main Street Junction,Central,55,29,3,10,13,4,Green,145,Critical
+TR0376,2026-10-20 12:07:00,Market Square,South,3,1,0,2,0,14,Green,13,Normal
+TR0377,2026-10-20 12:17:00,City Center Crossing,Central,36,19,2,8,7,12,Yellow,84,Heavy
+TR0378,2026-10-20 12:22:00,Highway Entry Ramp,North,18,9,1,4,4,23,Red,59,Moderate
+TR0379,2026-10-20 12:29:00,Main Street Junction,Central,36,18,2,12,4,13,Red,74,Heavy
+TR0380,2026-10-20 12:33:00,Riverside Bridge,South,19,10,1,6,2,10,Green,43,Moderate
+TR0381,2026-10-20 13:06:00,Railway Station Road,East,10,5,0,3,2,20,Yellow,28,Normal
+TR0382,2026-10-20 13:12:00,University Gate,West,15,7,1,6,1,16,Green,29,Moderate
+TR0383,2026-10-20 13:21:00,Market Square,South,23,12,1,6,4,33,Red,64,Moderate
+TR0384,2026-10-20 13:25:00,Airport Link Road,North,24,15,0,6,3,34,Red,69,Moderate
+TR0385,2026-10-20 13:27:00,Highway Entry Ramp,North,36,18,2,11,5,2,Green,91,Heavy
+TR0386,2026-10-20 17:02:00,Riverside Bridge,South,20,11,1,4,4,32,Red,53,Moderate
+TR0387,2026-10-20 17:07:00,Highway Entry Ramp,North,52,30,4,7,11,14,Red,115,Critical
+TR0388,2026-10-20 17:24:00,Railway Station Road,East,32,19,2,7,4,2,Red,95,Heavy
+TR0389,2026-10-20 17:33:00,Market Square,South,32,17,1,8,6,8,Green,72,Heavy
+TR0390,2026-10-20 17:38:00,Main Street Junction,Central,48,31,3,5,9,3,Red,95,Critical
+TR0391,2026-10-20 18:03:00,Main Street Junction,Central,44,22,1,15,6,20,Red,118,Critical
+TR0392,2026-10-20 18:05:00,City Center Crossing,Central,44,26,3,5,10,31,Green,84,Critical
+TR0393,2026-10-20 18:17:00,Riverside Bridge,South,34,19,3,7,5,12,Red,91,Heavy
+TR0394,2026-10-20 18:39:00,Railway Station Road,East,37,19,2,9,7,23,Red,91,Heavy
+TR0395,2026-10-20 18:47:00,University Gate,West,39,24,1,10,4,43,Red,93,Heavy
+TR0396,2026-10-20 19:08:00,Main Street Junction,Central,39,24,1,8,6,43,Red,112,Heavy
+TR0397,2026-10-20 19:33:00,Railway Station Road,East,29,17,2,5,5,44,Green,69,Heavy
+TR0398,2026-10-20 19:36:00,Highway Entry Ramp,North,41,24,2,10,5,24,Green,110,Critical
+TR0399,2026-10-20 19:39:00,Market Square,South,23,11,1,7,4,32,Green,57,Moderate
+TR0400,2026-10-20 19:44:00,University Gate,West,23,14,1,4,4,43,Red,78,Moderate
+TR0401,2026-10-20 21:03:00,Riverside Bridge,South,8,4,0,3,1,30,Green,22,Normal
+TR0402,2026-10-20 21:21:00,Airport Link Road,North,20,11,1,6,2,31,Red,70,Moderate
+TR0403,2026-10-20 21:28:00,Highway Entry Ramp,North,29,15,2,5,7,3,Red,77,Heavy
+TR0404,2026-10-20 21:30:00,University Gate,West,15,8,1,5,1,2,Red,62,Moderate
+TR0405,2026-10-20 21:35:00,City Center Crossing,Central,29,17,1,6,5,34,Green,70,Heavy
+TR0406,2026-10-21 07:00:00,Highway Entry Ramp,North,27,17,1,3,6,34,Green,78,Heavy
+TR0407,2026-10-21 07:02:00,University Gate,West,10,6,0,3,1,28,Red,39,Normal
+TR0408,2026-10-21 07:07:00,Riverside Bridge,South,23,13,1,4,5,8,Green,43,Moderate
+TR0409,2026-10-21 07:37:00,Main Street Junction,Central,27,14,1,6,6,44,Green,74,Heavy
+TR0410,2026-10-21 07:43:00,Airport Link Road,North,17,10,1,3,3,44,Green,41,Moderate
+TR0411,2026-10-21 08:18:00,Highway Entry Ramp,North,56,28,3,18,7,5,Green,103,Critical
+TR0412,2026-10-21 08:25:00,Airport Link Road,North,52,29,3,13,7,34,Red,136,Critical
+TR0413,2026-10-21 08:35:00,City Center Crossing,Central,52,29,4,9,10,28,Green,136,Critical
+TR0414,2026-10-21 08:43:00,University Gate,West,36,23,2,6,5,42,Red,75,Heavy
+TR0415,2026-10-21 08:45:00,Railway Station Road,East,24,14,1,5,4,15,Green,46,Moderate
+TR0416,2026-10-21 09:03:00,Highway Entry Ramp,North,45,27,3,8,7,4,Red,111,Critical
+TR0417,2026-10-21 09:24:00,Market Square,South,14,7,1,3,3,37,Red,50,Moderate
+TR0418,2026-10-21 09:38:00,City Center Crossing,Central,34,18,1,8,7,30,Red,92,Heavy
+TR0419,2026-10-21 09:39:00,Airport Link Road,North,43,24,3,10,6,43,Red,116,Critical
+TR0420,2026-10-21 09:43:00,Riverside Bridge,South,27,16,1,5,5,20,Green,45,Heavy
+TR0421,2026-10-21 12:02:00,Highway Entry Ramp,North,21,10,1,6,4,23,Yellow,53,Moderate
+TR0422,2026-10-21 12:09:00,Market Square,South,20,12,1,4,3,42,Green,50,Moderate
+TR0423,2026-10-21 12:13:00,Railway Station Road,East,26,14,2,5,5,43,Red,79,Heavy
+TR0424,2026-10-21 12:26:00,Main Street Junction,Central,25,14,1,6,4,15,Green,48,Moderate
+TR0425,2026-10-21 12:50:00,University Gate,West,11,6,0,4,1,13,Green,27,Moderate
+TR0426,2026-10-21 13:01:00,Market Square,South,28,15,1,6,6,4,Red,81,Heavy
+TR0427,2026-10-21 13:02:00,Railway Station Road,East,14,8,1,3,2,9,Red,47,Moderate
+TR0428,2026-10-21 13:32:00,University Gate,West,10,5,0,4,1,36,Green,24,Normal
+TR0429,2026-10-21 13:42:00,Airport Link Road,North,16,9,0,4,3,29,Green,51,Moderate
+TR0430,2026-10-21 13:43:00,City Center Crossing,Central,22,11,1,7,3,7,Red,54,Moderate
+TR0431,2026-10-21 17:24:00,City Center Crossing,Central,37,20,1,10,6,2,Green,91,Heavy
+TR0432,2026-10-21 17:25:00,Highway Entry Ramp,North,57,35,3,6,13,42,Red,153,Critical
+TR0433,2026-10-21 17:38:00,Riverside Bridge,South,39,22,3,8,6,32,Red,90,Heavy
+TR0434,2026-10-21 17:46:00,Railway Station Road,East,18,9,0,5,4,4,Red,61,Moderate
+TR0435,2026-10-21 17:47:00,University Gate,West,31,18,1,6,6,34,Red,91,Heavy
+TR0436,2026-10-21 18:07:00,Highway Entry Ramp,North,56,35,5,4,12,37,Yellow,119,Critical
+TR0437,2026-10-21 18:09:00,Market Square,South,34,19,2,8,5,29,Red,87,Heavy
+TR0438,2026-10-21 18:26:00,City Center Crossing,Central,30,19,1,4,6,13,Red,90,Heavy
+TR0439,2026-10-21 18:41:00,Airport Link Road,North,34,17,2,11,4,23,Green,69,Heavy
+TR0440,2026-10-21 18:42:00,Riverside Bridge,South,40,20,3,12,5,33,Green,83,Heavy
+TR0441,2026-10-21 19:04:00,Airport Link Road,North,31,19,2,4,6,39,Yellow,65,Heavy
+TR0442,2026-10-21 19:23:00,Railway Station Road,East,36,22,2,6,6,21,Yellow,65,Heavy
+TR0443,2026-10-21 19:35:00,Riverside Bridge,South,14,7,1,3,3,43,Green,28,Moderate
+TR0444,2026-10-21 19:38:00,Market Square,South,37,18,3,11,5,36,Red,109,Heavy
+TR0445,2026-10-21 19:49:00,Highway Entry Ramp,North,39,20,1,11,7,25,Green,97,Heavy
+TR0446,2026-10-21 21:02:00,Airport Link Road,North,21,10,0,8,3,15,Green,55,Moderate
+TR0447,2026-10-21 21:10:00,Highway Entry Ramp,North,22,11,1,5,5,11,Green,48,Moderate
+TR0448,2026-10-21 21:30:00,University Gate,West,24,15,1,3,5,43,Red,76,Moderate
+TR0449,2026-10-21 21:33:00,Railway Station Road,East,5,2,0,2,1,27,Red,34,Normal
+TR0450,2026-10-21 21:40:00,City Center Crossing,Central,32,17,1,8,6,43,Red,83,Heavy
+TR0451,2026-10-22 07:03:00,Airport Link Road,North,18,9,1,4,4,27,Green,37,Moderate
+TR0452,2026-10-22 07:14:00,University Gate,West,19,10,0,6,3,45,Yellow,33,Moderate
+TR0453,2026-10-22 07:28:00,Riverside Bridge,South,18,10,0,6,2,25,Green,52,Moderate
+TR0454,2026-10-22 07:41:00,Main Street Junction,Central,28,14,1,8,5,42,Green,71,Heavy
+TR0455,2026-10-22 07:46:00,City Center Crossing,Central,24,15,1,5,3,32,Green,44,Moderate
+TR0456,2026-10-22 08:06:00,Airport Link Road,North,42,26,3,5,8,40,Red,106,Critical
+TR0457,2026-10-22 08:10:00,Highway Entry Ramp,North,38,23,2,7,6,39,Red,87,Heavy
+TR0458,2026-10-22 08:14:00,Riverside Bridge,South,15,9,1,3,2,24,Green,46,Moderate
+TR0459,2026-10-22 08:34:00,City Center Crossing,Central,51,31,3,7,10,25,Green,120,Critical
+TR0460,2026-10-22 08:38:00,University Gate,West,29,14,2,7,6,9,Red,87,Heavy
+TR0461,2026-10-22 09:06:00,Riverside Bridge,South,34,18,2,7,7,25,Green,94,Heavy
+TR0462,2026-10-22 09:19:00,Airport Link Road,North,23,12,2,6,3,9,Green,55,Moderate
+TR0463,2026-10-22 09:36:00,Railway Station Road,East,42,24,2,9,7,15,Green,79,Critical
+TR0464,2026-10-22 09:48:00,Highway Entry Ramp,North,59,31,4,13,11,13,Red,140,Critical
+TR0465,2026-10-22 09:49:00,City Center Crossing,Central,45,24,2,9,10,14,Red,118,Critical
+TR0466,2026-10-22 12:05:00,Main Street Junction,Central,31,18,1,8,4,25,Red,65,Heavy
+TR0467,2026-10-22 12:25:00,City Center Crossing,Central,18,10,1,4,3,40,Red,58,Moderate
+TR0468,2026-10-22 12:40:00,University Gate,West,15,9,1,2,3,14,Red,54,Moderate
+TR0469,2026-10-22 12:44:00,Railway Station Road,East,17,9,0,6,2,17,Green,44,Moderate
+TR0470,2026-10-22 12:50:00,Highway Entry Ramp,North,24,13,1,6,4,5,Red,76,Moderate
+TR0471,2026-10-22 13:16:00,Railway Station Road,East,20,11,1,5,3,9,Green,58,Moderate
+TR0472,2026-10-22 13:22:00,Airport Link Road,North,15,8,0,4,3,14,Yellow,28,Moderate
+TR0473,2026-10-22 13:25:00,University Gate,West,9,5,0,3,1,20,Green,27,Normal
+TR0474,2026-10-22 13:49:00,Market Square,South,9,5,0,3,1,6,Red,39,Normal
+TR0475,2026-10-22 13:50:00,Highway Entry Ramp,North,37,21,3,6,7,38,Yellow,67,Heavy
+TR0476,2026-10-22 17:02:00,Market Square,South,38,23,2,7,6,38,Green,87,Heavy
+TR0477,2026-10-22 17:04:00,Airport Link Road,North,29,15,2,8,4,13,Green,67,Heavy
+TR0478,2026-10-22 17:31:00,Highway Entry Ramp,North,49,29,2,11,7,18,Red,98,Critical
+TR0479,2026-10-22 17:33:00,Railway Station Road,East,30,17,1,6,6,20,Red,86,Heavy
+TR0480,2026-10-22 17:39:00,Riverside Bridge,South,21,10,2,7,2,33,Green,56,Moderate
+TR0481,2026-10-22 18:03:00,University Gate,West,21,13,1,5,2,45,Green,41,Moderate
+TR0482,2026-10-22 18:13:00,Riverside Bridge,South,25,14,1,5,5,27,Red,57,Moderate
+TR0483,2026-10-22 18:23:00,City Center Crossing,Central,40,23,2,9,6,41,Red,85,Heavy
+TR0484,2026-10-22 18:36:00,Market Square,South,23,13,1,4,5,26,Red,80,Moderate
+TR0485,2026-10-22 18:44:00,Railway Station Road,East,27,15,1,7,4,45,Red,76,Heavy
+TR0486,2026-10-22 19:16:00,Railway Station Road,East,20,11,0,5,4,18,Yellow,50,Moderate
+TR0487,2026-10-22 19:31:00,Highway Entry Ramp,North,39,20,3,7,9,36,Green,95,Heavy
+TR0488,2026-10-22 19:43:00,City Center Crossing,Central,48,28,2,9,9,20,Red,127,Critical
+TR0489,2026-10-22 19:47:00,Main Street Junction,Central,44,24,3,10,7,18,Red,103,Critical
+TR0490,2026-10-22 19:49:00,Airport Link Road,North,32,19,2,4,7,20,Yellow,83,Heavy
+TR0491,2026-10-22 21:04:00,Market Square,South,22,12,1,5,4,40,Green,44,Moderate
+TR0492,2026-10-22 21:08:00,Riverside Bridge,South,15,9,0,3,3,12,Red,44,Moderate
+TR0493,2026-10-22 21:35:00,University Gate,West,6,3,0,2,1,7,Red,28,Normal
+TR0494,2026-10-22 21:41:00,Airport Link Road,North,26,13,1,7,5,10,Red,77,Heavy
+TR0495,2026-10-22 21:49:00,Railway Station Road,East,20,12,1,4,3,30,Yellow,32,Moderate
+TR0496,2026-10-23 07:00:00,Airport Link Road,North,8,4,0,3,1,33,Green,15,Normal
+TR0497,2026-10-23 07:11:00,Market Square,South,10,6,0,2,2,42,Green,22,Normal
+TR0498,2026-10-23 07:29:00,Main Street Junction,Central,25,16,1,4,4,30,Red,86,Moderate
+TR0499,2026-10-23 07:30:00,Highway Entry Ramp,North,25,14,1,5,5,25,Yellow,39,Moderate
+TR0500,2026-10-23 07:49:00,Railway Station Road,East,15,8,0,5,2,2,Green,32,Moderate
+TR0501,2026-10-23 08:18:00,Market Square,South,25,13,2,5,5,16,Red,53,Moderate
+TR0502,2026-10-23 08:21:00,Riverside Bridge,South,18,10,1,4,3,4,Red,60,Moderate
+TR0503,2026-10-23 08:24:00,Airport Link Road,North,34,20,2,6,6,41,Green,79,Heavy
+TR0504,2026-10-23 08:29:00,City Center Crossing,Central,40,23,1,11,5,5,Green,58,Heavy
+TR0505,2026-10-23 08:41:00,Railway Station Road,East,31,18,2,5,6,6,Red,79,Heavy
+TR0506,2026-10-23 09:11:00,Main Street Junction,Central,53,28,4,9,12,2,Red,141,Critical
+TR0507,2026-10-23 09:24:00,Highway Entry Ramp,North,52,31,3,12,6,8,Green,141,Critical
+TR0508,2026-10-23 09:24:00,Railway Station Road,East,21,12,1,5,3,42,Green,56,Moderate
+TR0509,2026-10-23 09:27:00,Market Square,South,34,18,1,11,4,9,Red,72,Heavy
+TR0510,2026-10-23 09:33:00,Riverside Bridge,South,34,18,1,10,5,44,Red,77,Heavy
+TR0511,2026-10-23 12:22:00,University Gate,West,19,10,1,5,3,10,Red,53,Moderate
+TR0512,2026-10-23 12:28:00,City Center Crossing,Central,18,10,1,4,3,38,Red,58,Moderate
+TR0513,2026-10-23 12:29:00,Highway Entry Ramp,North,27,17,1,4,5,11,Yellow,72,Heavy
+TR0514,2026-10-23 12:44:00,Market Square,South,19,11,1,5,2,22,Green,56,Moderate
+TR0515,2026-10-23 12:49:00,Riverside Bridge,South,20,10,1,5,4,42,Red,53,Moderate
+TR0516,2026-10-23 13:06:00,Main Street Junction,Central,23,13,2,6,2,10,Red,49,Moderate
+TR0517,2026-10-23 13:14:00,Airport Link Road,North,21,12,2,5,2,15,Green,53,Moderate
+TR0518,2026-10-23 13:31:00,University Gate,West,17,10,1,4,2,41,Green,34,Moderate
+TR0519,2026-10-23 13:34:00,Railway Station Road,East,18,10,0,5,3,20,Red,55,Moderate
+TR0520,2026-10-23 13:46:00,Market Square,South,30,15,2,10,3,41,Red,92,Heavy
+TR0521,2026-10-23 17:12:00,Market Square,South,23,13,1,6,3,28,Green,62,Moderate
+TR0522,2026-10-23 17:19:00,Airport Link Road,North,19,9,1,7,2,8,Green,41,Moderate
+TR0523,2026-10-23 17:22:00,Main Street Junction,Central,46,27,3,7,9,8,Red,95,Critical
+TR0524,2026-10-23 17:32:00,Highway Entry Ramp,North,48,31,2,7,8,22,Green,129,Critical
+TR0525,2026-10-23 17:35:00,Riverside Bridge,South,28,17,1,4,6,41,Red,56,Heavy
+TR0526,2026-10-23 18:05:00,Highway Entry Ramp,North,52,30,2,10,10,6,Green,124,Critical
+TR0527,2026-10-23 18:14:00,Market Square,South,28,14,2,8,4,19,Green,65,Heavy
+TR0528,2026-10-23 18:28:00,Riverside Bridge,South,29,14,1,10,4,10,Green,55,Heavy
+TR0529,2026-10-23 18:36:00,Railway Station Road,East,29,16,1,8,4,39,Red,68,Heavy
+TR0530,2026-10-23 18:38:00,Airport Link Road,North,37,19,2,9,7,37,Green,70,Heavy
+TR0531,2026-10-23 19:07:00,Airport Link Road,North,32,20,2,6,4,40,Green,79,Heavy
+TR0532,2026-10-23 19:21:00,Main Street Junction,Central,55,27,2,17,9,34,Yellow,135,Critical
+TR0533,2026-10-23 19:24:00,Market Square,South,36,19,2,9,6,16,Red,100,Heavy
+TR0534,2026-10-23 19:28:00,University Gate,West,31,19,1,5,6,29,Red,75,Heavy
+TR0535,2026-10-23 19:38:00,Riverside Bridge,South,27,16,2,5,4,23,Red,85,Heavy
+TR0536,2026-10-23 21:00:00,Airport Link Road,North,16,8,0,5,3,32,Red,49,Moderate
+TR0537,2026-10-23 21:01:00,University Gate,West,31,19,1,7,4,30,Green,62,Heavy
+TR0538,2026-10-23 21:12:00,City Center Crossing,Central,24,14,2,5,3,17,Green,64,Moderate
+TR0539,2026-10-23 21:25:00,Highway Entry Ramp,North,34,20,2,8,4,35,Red,77,Heavy
+TR0540,2026-10-23 21:27:00,Railway Station Road,East,9,4,0,4,1,24,Red,41,Normal
