@@ -1,0 +1,184 @@
+{% extends "base.html" %}
+{% block title %}India Live Monitor | Traffic Detection{% endblock %}
+{% block head %}
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+<style>
+.monitor-map{height:390px;border-radius:14px;overflow:hidden;border:1px solid #334155}
+.camera-frame{width:100%;max-height:390px;object-fit:contain;background:#05080d;border-radius:12px}
+.metric{font-size:1.8rem;font-weight:700;color:#facc15}
+.status-dot{display:inline-block;width:9px;height:9px;border-radius:50%;background:#64748b;margin-right:7px}
+.status-dot.live{background:#22c55e;box-shadow:0 0 10px #22c55e}
+</style>
+{% endblock %}
+{% block content %}
+<div class="container-xl py-4">
+  <div class="d-flex flex-wrap align-items-center justify-content-between gap-2 mb-3">
+    <div><h1 class="page-title mb-1">India Live Traffic Monitor</h1>
+      <p class="text-secondary mb-0">Remote road-camera monitoring is the main feature. Webcam testing is optional.</p></div>
+    <span class="tech-chip"><i class="fa-solid fa-road"></i> Remote monitoring first</span>
+  </div>
+  <div class="alert alert-info"><strong>Live-feed note:</strong> No government CCTV feeds are bundled. Remote monitoring uses only authorised feeds manually configured in cameras.json. Webcam detection remains an optional feature. Map pins show mapped city locations, not live congestion or camera availability.</div>
+  <div class="card-panel mb-3" id="publicCameraPreview">
+    <h2 class="chart-title">Public India Road Camera · Guwahati (External Preview)</h2>
+    <p class="text-secondary mb-2">A public traffic-camera listing is available for Guwahati, Assam. This is a periodically refreshed image (approximately every 20 minutes), <strong>not a continuous video stream</strong>. The provider currently may show “Feed unavailable”. This external preview is not connected to YOLO vehicle detection.</p>
+    <a class="btn btn-outline-info" href="https://opencctv.org/cameras/india/assam/guwahati/guwahati-assam-306464" target="_blank" rel="noopener noreferrer">Open Guwahati Public Camera ↗</a>
+    <span class="small text-secondary ms-2">Camera availability and reuse permissions must be confirmed with the source operator before integration.</span>
+  </div>
+  <div class="card-panel mb-3" id="remotePanel">
+<h2 class="chart-title">MAIN FEATURE · Remote India Traffic Monitoring</h2>
+<p class="text-secondary">Choose an authorised camera configured by the operator in <code>cameras.json</code>. Camera URLs are never sent to the browser. No official public CCTV feeds are included by default.</p>
+<div class="row g-2 align-items-end"><div class="col-md-8"><label for="remoteCamera" class="form-label">Registered road camera</label><select id="remoteCamera" class="form-select"></select></div><div class="col-md-4"><button id="remoteStart" class="btn btn-signal w-100">Start Remote Monitoring</button></div></div>
+<div class="mt-2"><button id="remoteStop" class="btn btn-outline-light btn-sm" disabled>Stop Remote Monitoring</button> <span id="remoteStatus" class="small text-secondary">No live road feed connected.</span></div>
+<img id="remoteFrame" class="camera-frame mt-3 d-none" alt="Processed authorised road camera frame">
+<div id="remoteMetrics" class="small mt-2 text-secondary">Remote detection output: not available yet.</div>
+</div>
+<div class="row g-3">
+    <div class="col-lg-5">
+      <div class="card-panel h-100">
+        <h2 class="chart-title">Optional · Webcam Detection</h2>
+        <label class="form-label" for="stateSelect">State / Union Territory</label>
+        <select id="stateSelect" class="form-select mb-3"><option>Loading locations...</option></select>
+        <label class="form-label" for="citySelect">Mapped city</label>
+        <select id="citySelect" class="form-select mb-3"></select>
+        <label class="form-label" for="customCity">Or enter another city / area</label>
+        <input id="customCity" class="form-control mb-3" placeholder="Example: Manesar, Haryana">
+        <label class="form-label" for="cameraName">Camera name</label>
+        <input id="cameraName" class="form-control mb-3" value="Laptop webcam">
+        <div class="d-flex gap-2 flex-wrap">
+          <button id="startCamera" class="btn btn-signal"><i class="fa-solid fa-camera"></i> Start webcam</button>
+          <button id="stopCamera" class="btn btn-outline-light" disabled><i class="fa-solid fa-stop"></i> Stop</button>
+        </div>
+        <p id="cameraStatus" class="small text-secondary mt-3 mb-0"><span class="status-dot"></span>Camera stopped</p>
+        <video id="cameraVideo" class="camera-frame mt-3" autoplay muted playsinline></video>
+        <canvas id="captureCanvas" class="d-none"></canvas>
+        <div class="small text-secondary mt-2">Allow camera access in your browser. Detection runs on the Flask server using the existing YOLO model. Keep this page open while monitoring.</div>
+      </div>
+    </div>
+    <div class="col-lg-7">
+      <div class="card-panel mb-3">
+        <h2 class="chart-title">Webcam detection output</h2>
+        <div class="row g-2 text-center">
+          <div class="col-4"><div class="small text-secondary">Total</div><div id="totalCount" class="metric">0</div></div>
+          <div class="col-4"><div class="small text-secondary">Cars</div><div id="carCount" class="metric">0</div></div>
+          <div class="col-4"><div class="small text-secondary">Two-wheelers</div><div id="bikeCount" class="metric">0</div></div>
+          <div class="col-4"><div class="small text-secondary">Buses</div><div id="busCount" class="metric">0</div></div>
+          <div class="col-4"><div class="small text-secondary">Trucks</div><div id="truckCount" class="metric">0</div></div>
+          <div class="col-4"><div class="small text-secondary">Traffic level</div><div id="trafficLevel" class="fw-bold mt-2">—</div></div>
+        </div>
+        <img id="annotatedFrame" class="camera-frame mt-3 d-none" alt="YOLO annotated live camera frame">
+        <p id="lastDetected" class="small text-secondary mt-2 mb-0">No frames processed yet.</p>
+      </div>
+      <div class="card-panel">
+        <div class="d-flex justify-content-between align-items-center"><h2 class="chart-title mb-2">India location reference map</h2><span class="small text-secondary" id="locationCount">Loading...</span></div>
+        <div id="indiaMap" class="monitor-map"></div>
+      </div>
+    </div>
+  </div>
+  <div class="card-panel mt-3">
+    <h2 class="chart-title">Recent live detection history</h2>
+    <div class="table-responsive"><table class="table table-sm align-middle mb-0">
+      <thead><tr><th>Time (UTC)</th><th>State</th><th>City</th><th>Camera</th><th>Vehicles</th><th>Level</th></tr></thead>
+      <tbody id="historyRows"><tr><td colspan="6" class="text-secondary">No live detections saved yet.</td></tr></tbody>
+    </table></div>
+  </div>
+</div>
+{% endblock %}
+{% block scripts %}
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script>
+(() => {
+ const stateSelect=document.getElementById('stateSelect'), citySelect=document.getElementById('citySelect');
+ const video=document.getElementById('cameraVideo'), canvas=document.getElementById('captureCanvas');
+ const startBtn=document.getElementById('startCamera'), stopBtn=document.getElementById('stopCamera');
+ const status=document.getElementById('cameraStatus'), output=document.getElementById('annotatedFrame');
+ let locations=[], stream=null, timer=null, busy=false, map=null, markers=[];
+ const $=id=>document.getElementById(id);
+ function selectedState(){return stateSelect.value||'Unknown'}
+ function selectedCity(){return $('customCity').value.trim()||citySelect.value||'Unknown'}
+ function setStatus(msg,live=false){status.innerHTML='<span class="status-dot '+(live?'live':'')+'"></span>'+msg}
+ function renderCities(){
+   const s=locations.find(x=>x.state===selectedState());
+   citySelect.innerHTML=(s?.cities||[]).map(c=>`<option value="${c[0]}">${c[0]}</option>`).join('');
+   if(s?.cities?.length && map) map.setView([s.cities[0][1],s.cities[0][2]],7);
+ }
+ async function loadLocations(){
+   const r=await fetch('/api/india/locations'),d=await r.json(); locations=d.states||[];
+   stateSelect.innerHTML=locations.map(s=>`<option>${s.state}</option>`).join('');
+   $('locationCount').textContent=`${d.state_count} States / UTs`;
+   stateSelect.addEventListener('change',renderCities); renderCities();
+   map=L.map('indiaMap').setView([22.8,79.0],4);
+   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'&copy; OpenStreetMap'}).addTo(map);
+   locations.forEach(s=>s.cities.forEach(c=>{
+     const m=L.marker([c[1],c[2]]).addTo(map).bindPopup(`<b>${c[0]}</b><br>${s.state}<br>Mapped location only — no live camera feed linked`);
+     markers.push(m);
+   }));
+ }
+ async function processFrame(){
+   if(!stream||busy||video.readyState<2)return;
+   busy=true;
+   try{
+     canvas.width=video.videoWidth;canvas.height=video.videoHeight;
+     const ctx=canvas.getContext('2d');ctx.drawImage(video,0,0,canvas.width,canvas.height);
+     const blob=await new Promise(resolve=>canvas.toBlob(resolve,'image/jpeg',0.72));
+     if(!blob)return;
+     const form=new FormData();form.append('frame',blob,'webcam.jpg');
+     form.append('state',selectedState());form.append('city',selectedCity());form.append('camera_name',$('cameraName').value||'Browser webcam');
+     const res=await fetch('/api/live/detect',{method:'POST',body:form}),data=await res.json();
+     if(!res.ok)throw new Error(data.error||'Detection request failed');
+     output.src=data.image;output.classList.remove('d-none');
+     $('totalCount').textContent=data.counts.total;$('carCount').textContent=data.counts.cars;
+     $('bikeCount').textContent=data.counts.motorcycles;$('busCount').textContent=data.counts.buses;
+     $('truckCount').textContent=data.counts.trucks;$('trafficLevel').textContent=data.level;
+     $('lastDetected').textContent=`${data.city}, ${data.state} · ${new Date(data.timestamp).toLocaleString()}`;
+     loadHistory();
+   }catch(e){setStatus(e.message,false);stopCamera();}
+   finally{busy=false;}
+ }
+ async function startCamera(){
+   if(!navigator.mediaDevices?.getUserMedia){setStatus('Camera access needs localhost or HTTPS and a supported browser.');return}
+   try{
+     stream=await navigator.mediaDevices.getUserMedia({video:{facingMode:'environment'},audio:false});
+     video.srcObject=stream;await video.play();
+     startBtn.disabled=true;stopBtn.disabled=false;setStatus('Webcam active — YOLO processing frames',true);
+     timer=setInterval(processFrame,1400);processFrame();
+   }catch(e){setStatus('Camera could not start: '+e.message)}
+ }
+ function stopCamera(){
+   if(timer)clearInterval(timer);timer=null;
+   if(stream)stream.getTracks().forEach(t=>t.stop());stream=null;video.srcObject=null;
+   startBtn.disabled=false;stopBtn.disabled=true;setStatus('Camera stopped');
+ }
+ async function loadHistory(){
+   const r=await fetch('/api/live/history'),d=await r.json();
+   $('historyRows').innerHTML=d.records.length?d.records.slice(0,15).map(x=>`<tr><td>${new Date(x.timestamp).toLocaleString()}</td><td>${x.state}</td><td>${x.city}</td><td>${x.camera}</td><td>${x.total}</td><td>${x.total<=10?'Normal':x.total<=25?'Moderate':x.total<=40?'Heavy':'Critical'}</td></tr>`).join(''):'<tr><td colspan="6" class="text-secondary">No live detections saved yet.</td></tr>';
+ }
+ let remoteTimer=null,remoteBusy=false;
+ async function loadRemoteCameras(){
+   const r=await fetch('/api/remote/cameras'),d=await r.json();
+   const sel=$('remoteCamera');sel.innerHTML='';
+   for(const c of d.cameras){const opt=document.createElement('option');opt.value=c.id;opt.textContent=`${c.city} · ${c.name} (${c.configured?'configured':'feed unavailable'})`;sel.appendChild(opt)}
+   if(!d.cameras.length){const opt=document.createElement('option');opt.textContent='No registered cameras';sel.appendChild(opt)}
+ }
+ function stopRemote(){if(remoteTimer)clearInterval(remoteTimer);remoteTimer=null;$('remoteStart').disabled=false;$('remoteStop').disabled=true;}
+ async function remoteTick(){
+   if(remoteBusy)return;remoteBusy=true;
+   try{
+     const id=$('remoteCamera').value;
+     if(!id)throw new Error('No registered camera selected');
+     const r=await fetch('/api/remote/snapshot/'+encodeURIComponent(id));const d=await r.json();
+     if(!r.ok)throw new Error(d.error||'Feed unavailable');
+     $('remoteFrame').src=d.image;$('remoteFrame').classList.remove('d-none');
+     $('remoteMetrics').textContent=`${d.city}, ${d.state} | ${new Date(d.timestamp).toLocaleString()} | Vehicles: ${d.counts.total} | Cars: ${d.counts.cars} | Bikes: ${d.counts.motorcycles} | Buses: ${d.counts.buses} | Trucks: ${d.counts.trucks} | Level: ${d.level}`;
+     $('remoteStatus').textContent='Verified configured feed responding · last frame '+new Date(d.timestamp).toLocaleTimeString();
+   }catch(e){$('remoteStatus').textContent=e.message;$('remoteFrame').classList.add('d-none');stopRemote()}
+   finally{remoteBusy=false}
+ }
+ $('remoteStart').addEventListener('click',()=>{stopRemote();$('remoteStart').disabled=true;$('remoteStop').disabled=false;$('remoteStatus').textContent='Connecting to authorised feed…';remoteTick();remoteTimer=setInterval(remoteTick,3500)});
+ $('remoteStop').addEventListener('click',()=>{stopRemote();$('remoteStatus').textContent='Remote monitoring stopped.'});
+ loadRemoteCameras().catch(e=>$('remoteStatus').textContent=e.message);
+ startBtn.addEventListener('click',startCamera);stopBtn.addEventListener('click',stopCamera);
+ window.addEventListener('beforeunload',()=>{stopCamera();stopRemote()});
+ loadLocations().catch(e=>setStatus('Could not load India location data: '+e.message));loadHistory();
+})();
+</script>
+{% endblock %}

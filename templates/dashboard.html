@@ -1,0 +1,49 @@
+{% extends "base.html" %}
+{% block title %}Dashboard | Traffic Detection{% endblock %}
+{% block content %}
+<div class="container-xl py-4">
+  <div class="row g-4">
+    <aside class="col-lg-3">
+      <div class="card-panel sidebar">
+        <h2 class="side-title">Dashboard</h2>
+        <nav class="side-nav mb-3">
+          <a class="active" href="{{ url_for('dashboard') }}"><i class="fa-solid fa-gauge-high"></i> Overview</a>
+          <a href="{{ url_for('analytics') }}"><i class="fa-solid fa-chart-column"></i> Analytics</a>
+          <a href="{{ url_for('traffic_data') }}"><i class="fa-solid fa-table"></i> Traffic data</a>
+          <a href="{{ url_for('detection') }}"><i class="fa-solid fa-video"></i> Live detection</a>
+        </nav>
+        <h3 class="side-sub">Filters</h3>
+        <div id="filterBox"></div>
+      </div>
+    </aside>
+
+    <section class="col-lg-9">
+      <div id="statsMessage" class="alert alert-warning d-none"></div>
+      <div class="row g-3 mb-4" id="summaryCards">
+        {% for id, label, icon, cls in [
+          ('total_vehicles','Total vehicles','car-side','c-blue'),
+          ('cars','Cars','car','c-green'),
+          ('buses','Buses','bus','c-orange'),
+          ('trucks','Trucks','truck','c-red'),
+          ('motorcycles','Motorcycles','motorcycle','c-yellow'),
+          ('pedestrians','Pedestrians','person-walking','c-blue'),
+          ('avg_delay','Average delay (sec)','clock','c-orange'),
+          ('current_level','Current traffic level','traffic-light','c-green')] %}
+        <div class="col-6 col-xl-3">
+          <div class="stat-card {{ cls }}">
+            <i class="fa-solid fa-{{ icon }}"></i>
+            <div><div class="stat-label">{{ label }}</div><div class="stat-value" id="s_{{ id }}">&ndash;</div></div>
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+
+      <div class="row g-3">
+        <div class="col-12"><div class="card-panel"><h3 class="chart-title">Total vehicles by location</h3><div class="chart-box"><canvas id="chartLocation"></canvas></div></div></div>
+        <div class="col-md-6"><div class="card-panel"><h3 class="chart-title">Vehicle types</h3><div class="chart-box"><canvas id="chartTypes"></canvas></div></div></div>
+        <div class="col-md-6"><div class="card-panel"><h3 class="chart-title">Traffic level distribution</h3><div class="chart-box"><canvas id="chartLevel"></canvas></div></div></div>
+      </div>
+    </section>
+  </div>
+</div>
+{% endblock %}

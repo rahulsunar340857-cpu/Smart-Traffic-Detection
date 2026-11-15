@@ -1,0 +1,57 @@
+{% extends "base.html" %}
+{% block title %}About | Traffic Detection{% endblock %}
+{% block content %}
+<div class="container-xl py-4 about">
+  <h1 class="page-title">Smart Traffic Detection and Monitoring System</h1>
+  <div class="row g-4">
+    <div class="col-lg-8">
+      <div class="card-panel mb-4"><h2>Objective</h2>
+        <p class="mb-0">To detect vehicles automatically and monitor traffic conditions using computer vision and machine learning.</p></div>
+      <div class="card-panel mb-4"><h2>Problem statement</h2>
+        <p class="mb-0">Counting vehicles by hand is slow, tiring and inconsistent. Cities need a quick, repeatable way to measure how busy a road is, so signals and diversions can be planned with real numbers.</p></div>
+      <div class="card-panel mb-4"><h2>Objectives</h2>
+        <ul class="mb-0">
+          <li>Detect cars, motorcycles, buses and trucks in images and videos.</li>
+          <li>Rate traffic as Normal, Moderate, Heavy or Critical from the vehicle count.</li>
+          <li>Read traffic-light state where it is clearly visible.</li>
+          <li>Present stored traffic records in a dashboard, charts and a searchable table.</li>
+        </ul></div>
+      <div class="card-panel mb-4"><h2>Methodology</h2>
+        <ol class="mb-0">
+          <li>The user uploads an image or video through the web page.</li>
+          <li>Flask validates the file and saves it with a secure name.</li>
+          <li>OpenCV reads the frames and the YOLOv8n model detects objects.</li>
+          <li>Detections above the confidence threshold are counted by class.</li>
+          <li>The total sets the traffic level; traffic-light colour is read from its pixels.</li>
+          <li>The annotated result is saved in the results folder and shown on the page.</li>
+          <li>Pandas reads traffic_detection.csv to power the dashboard, charts and table.</li>
+        </ol></div>
+      <div class="card-panel mb-4"><h2>Advantages</h2>
+        <ul class="mb-0">
+          <li>Fast and consistent compared with manual counting.</li>
+          <li>Runs on an ordinary laptop with the lightweight YOLOv8n model.</li>
+          <li>Honest results: an unclear traffic light is reported as Not Detected.</li>
+          <li>Built on free, open-source tools.</li>
+        </ul></div>
+      <div class="card-panel"><h2>Future scope</h2>
+        <ul class="mb-0">
+          <li>Live camera and CCTV stream input.</li>
+          <li>Vehicle tracking to count each vehicle once across a video.</li>
+          <li>Number-plate recognition and speed estimation.</li>
+          <li>Database storage and automatic alerts for Critical traffic.</li>
+          <li>Adaptive signal timing based on detected congestion.</li>
+        </ul></div>
+    </div>
+    <div class="col-lg-4">
+      <div class="card-panel sidebar">
+        <h2>Technologies</h2>
+        <div class="d-flex flex-wrap gap-2">
+          {% for t in ['Python','Flask','OpenCV','YOLO','Pandas','NumPy','HTML','CSS','JavaScript','Bootstrap','Chart.js'] %}
+          <span class="tech-chip">{{ t }}</span>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}

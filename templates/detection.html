@@ -1,0 +1,76 @@
+{% extends "base.html" %}
+{% block title %}Live Detection | Traffic Detection{% endblock %}
+{% block content %}
+<div class="container-xl py-4">
+  <h1 class="page-title">Traffic Detection</h1>
+  <p class="text-secondary">Upload a road image or video. Vehicles above {{ (threshold * 100)|int }}% confidence are counted.</p>
+
+  <div class="row g-4">
+    <div class="col-lg-5">
+      <div class="card-panel">
+        <div id="dropzone" class="dropzone" tabindex="0" role="button" aria-label="Choose a file to upload">
+          <i class="fa-solid fa-cloud-arrow-up"></i>
+          <p class="mb-1"><strong>Drop a file here</strong> or click to browse</p>
+          <small class="text-secondary">JPG, JPEG, PNG, MP4, AVI, MOV &middot; up to {{ max_mb }} MB</small>
+          <input type="file" id="fileInput" class="d-none" accept=".jpg,.jpeg,.png,.mp4,.avi,.mov">
+        </div>
+        <div id="fileName" class="small text-secondary mt-2"></div>
+        <div id="progressWrap" class="progress mt-3 d-none" style="height:10px"><div id="progressBar" class="progress-bar bg-warning" style="width:0%"></div></div>
+        <div id="uploadError" class="alert alert-danger mt-3 d-none"></div>
+        <button id="detectBtn" class="btn btn-signal w-100 mt-3" disabled><i class="fa-solid fa-magnifying-glass"></i> Run detection</button>
+        <p class="small text-secondary mt-3 mb-0">Videos take longer: each frame is analysed by YOLO.</p>
+      </div>
+    </div>
+
+    <div class="col-lg-7">
+      <div id="resultEmpty" class="card-panel empty-state">
+        <i class="fa-solid fa-car-side"></i>
+        <p class="mb-0">Results appear here after you run detection.</p>
+      </div>
+
+      <div id="resultBox" class="d-none">
+        <div class="card-panel mb-3">
+          <h2 class="chart-title">Detection Result</h2>
+          <div class="row g-3 align-items-center">
+            <div class="col-sm-7">
+              <div class="result-total">Total Vehicles: <span id="rTotal">0</span></div>
+              <ul class="result-list">
+                <li>Cars: <strong id="rCars">0</strong></li>
+                <li>Motorcycles: <strong id="rMotorcycles">0</strong></li>
+                <li>Buses: <strong id="rBuses">0</strong></li>
+                <li>Trucks: <strong id="rTrucks">0</strong></li>
+              </ul>
+              <div>Traffic Level: <span id="rLevel" class="level-badge">&ndash;</span></div>
+            </div>
+            <div class="col-sm-5">
+              <div class="light-panel">
+                <div class="signal-box small-signal">
+                  <span class="lamp lamp-red" id="lampRed"></span><span class="lamp lamp-yellow" id="lampYellow"></span><span class="lamp lamp-green" id="lampGreen"></span>
+                </div>
+                <div id="rLight" class="light-text">Traffic Light: Not Detected</div>
+              </div>
+            </div>
+          </div>
+          <p id="rNote" class="small text-secondary mt-3 mb-0"></p>
+        </div>
+
+        <div class="card-panel mb-3">
+          <h3 class="chart-title">Processed output</h3>
+          <div id="mediaBox"></div>
+          <a id="downloadLink" class="btn btn-outline-light btn-sm mt-3" href="#"><i class="fa-solid fa-download"></i> Download result</a>
+        </div>
+
+        <div class="card-panel table-wrap">
+          <h3 class="chart-title">Detected objects</h3>
+          <div class="table-scroll">
+            <table class="table table-sm align-middle mb-0">
+              <thead><tr><th>Object</th><th>Confidence</th><th>Bounding box (x1, y1, x2, y2)</th></tr></thead>
+              <tbody id="detRows"></tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}

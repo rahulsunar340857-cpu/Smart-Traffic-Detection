@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% block title %}Analytics | Traffic Detection{% endblock %}
+{% block content %}
+<div class="container-xl py-4">
+  <h1 class="page-title">Analytics</h1>
+  <div class="card-panel mb-4"><div id="filterBox" class="filter-row"></div></div>
+  <div id="statsMessage" class="alert alert-warning d-none"></div>
+  <div class="row g-3">
+    <div class="col-lg-6"><div class="card-panel"><h3 class="chart-title">Total vehicles by location</h3><div class="chart-box"><canvas id="chartLocation"></canvas></div></div></div>
+    <div class="col-lg-6"><div class="card-panel"><h3 class="chart-title">Cars, buses, trucks and motorcycles</h3><div class="chart-box"><canvas id="chartTypes"></canvas></div></div></div>
+    <div class="col-lg-4"><div class="card-panel"><h3 class="chart-title">Traffic level distribution</h3><div class="chart-box"><canvas id="chartLevel"></canvas></div></div></div>
+    <div class="col-lg-4"><div class="card-panel"><h3 class="chart-title">Traffic light distribution</h3><div class="chart-box"><canvas id="chartLight"></canvas></div></div></div>
+    <div class="col-lg-4"><div class="card-panel"><h3 class="chart-title">Average delay by location (sec)</h3><div class="chart-box"><canvas id="chartDelay"></canvas></div></div></div>
+  </div>
+</div>
+{% endblock %}

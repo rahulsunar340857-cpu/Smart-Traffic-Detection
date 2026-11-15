@@ -1,0 +1,76 @@
+{% extends "base.html" %}
+{% block content %}
+<section class="hero">
+  <div class="container-xl">
+    <div class="row align-items-center g-5">
+      <div class="col-lg-7">
+        <h1 class="hero-title">See every vehicle.<br>Know the traffic.</h1>
+        <p class="hero-lead">Upload a road photo or video. The Smart Traffic Detection and Monitoring System finds cars, buses, trucks and motorcycles with YOLO, rates congestion from Normal to Critical, and tracks your traffic records on a live dashboard.</p>
+        <div class="d-flex flex-wrap gap-3">
+          <a href="{{ url_for('detection') }}" class="btn btn-signal btn-lg"><i class="fa-solid fa-play"></i> Start Detection</a>
+          <a href="{{ url_for('dashboard') }}" class="btn btn-outline-light btn-lg"><i class="fa-solid fa-gauge-high"></i> View Dashboard</a>
+        </div>
+      </div>
+      <div class="col-lg-5">
+        <div class="road-scene" aria-hidden="true">
+          <div class="signal-box">
+            <span class="lamp lamp-red"></span><span class="lamp lamp-yellow"></span><span class="lamp lamp-green"></span>
+          </div>
+          <div class="road"><div class="lane"></div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container-xl">
+    <h2 class="section-title">What the system does</h2>
+    <div class="row g-4">
+      {% for icon, title, text in [
+        ('car-side','Vehicle detection','YOLOv8 finds cars, motorcycles, buses and trucks in images and videos, with a confidence score for each.'),
+        ('gauge-high','Traffic level rating','Vehicle counts become Normal, Moderate, Heavy or Critical automatically.'),
+        ('traffic-light','Traffic light reading','Red, yellow or green is read from the image. If it is unclear, the result says Not Detected.'),
+        ('table','Searchable records','Browse every traffic record from the CSV file. Search, filter, sort and page through them.'),
+        ('chart-column','Interactive analytics','Five charts show vehicles, delays, traffic levels and signal states by location.'),
+        ('filter','Dashboard filters','Narrow everything by location, zone, level, traffic light or date.')] %}
+      <div class="col-md-6 col-lg-4">
+        <div class="card-panel h-100">
+          <i class="fa-solid fa-{{ icon }} feature-icon"></i>
+          <h3>{{ title }}</h3>
+          <p class="mb-0 text-secondary">{{ text }}</p>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="section section-alt">
+  <div class="container-xl">
+    <h2 class="section-title">How it works</h2>
+    <div class="row g-4">
+      {% for n, title, text in [
+        (1,'Upload','Choose a JPG, PNG, MP4, AVI or MOV file.'),
+        (2,'Detect','YOLO scans each frame and draws boxes around vehicles.'),
+        (3,'Count','Detections above the confidence threshold are counted by type.'),
+        (4,'Rate','The total sets the traffic level and the result is saved.')] %}
+      <div class="col-md-6 col-lg-3">
+        <div class="step"><span class="step-no">{{ n }}</span><h3>{{ title }}</h3><p class="mb-0 text-secondary">{{ text }}</p></div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container-xl">
+    <h2 class="section-title">Technologies used</h2>
+    <div class="d-flex flex-wrap gap-2">
+      {% for t in ['Python 3.13','Flask','OpenCV','Ultralytics YOLO','NumPy','Pandas','Bootstrap 5','Chart.js','DataTables','Font Awesome'] %}
+      <span class="tech-chip">{{ t }}</span>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+{% endblock %}
